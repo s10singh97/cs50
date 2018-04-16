@@ -1,0 +1,16 @@
+0.  An invented long word said to mean a lung disease caused by inhaling very fine ash and sand dust.
+
+1.  getrusage() returns resource usage measures for the parameter inside it.
+
+2.  There are 16 members in a structure named rusage.
+
+3.  We passed 'before' and 'after' by reference because we want to retain the changed value of both of them.
+
+4.  The for loop iterates character by character till end of file is reached. It allows only alphabetical characters and apostrophes and appends it to an array named word.
+    If the alphabetical strings are greater than 45 characters or if that character is a digit, it ignores the word and sets index to 0 to prepare for the next word.
+    If the above two conditions do not satisfy this means that a proper word has been found. So it is terminated with \0 and the word counter is updated.
+    Then the words spelling is checked and the time is calculated. If the word is 'misspelled' then it is printed out.
+    
+5.  We used fgetc instead of fscanf because with fgetc we can look at individual character and thus can look for numbers and apostrophe in the string while the same cannot be looked up if we used fscanf. 
+
+6.  These are pointers to a constant character. These pointers cannot change the value they are pointing to. It is useful in load and check because it only needs to read the characters.

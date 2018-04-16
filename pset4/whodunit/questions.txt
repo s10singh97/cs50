@@ -1,0 +1,20 @@
+1.  stdint.h is a header file in the C standard library which is useful for embedded programming which often involves considerable manipulation of hardware specific I/O registers.
+2.  It clearly specifies in what way you want to use the data.
+    uint8_t is same as unsigned char and is equal to 1 byte or 8 bits.
+    uint16_t is same as unsigned short and is equal to 2 bytes or 16 bits.
+    uint32_t is same as unsigned int and is equal to 4 bytes or 32 bits.
+    int32_t is same as signed int and is equal to 4 bytes or 32 bits.
+3.  BYTE - 1 byte or 8 bits
+    DWORD - 4 bytes or 32 bits
+    LONG - 4 bytes or 32 bits
+    WORD - 2 bytes of 16 bits
+4.  The first two bytes of any BMP file must be hexadecimal.
+5.  bfSize is included under a structure named BITMAPFILEHEADER and specifies the size of BMP file in bytes.
+    biSize is included under a structure named BITMAPINFOHEADER and specifies the size of the structure in bytes.
+6.  If biHeight is negative, the bitmap is a top-down DIB with the origin at the upper left corner.
+7.  biBitCount specifies the BMP's color depth (bits per pixels).
+8.  If it can not open the input or the output file it returns NULL.
+9.  The third argument is always 1 because it ensures only 1 object to be read at a time.
+10. 3.
+11. fseek() function is used to move file pointer position to the given location.
+12. It moves file pointer position to given location.
